@@ -51,7 +51,8 @@ big_list = add_to_list(l, 4)
 print(big_list)
 print(l)
 
-def extend_list(element, sequence=None):
+def extend_list(element: float, sequence: list[float]=None) -> list[float] :
+    """Extends list by element"""
     if not sequence:
         sequence = []
     sequence.append(element)
@@ -66,3 +67,5 @@ print(another_list_2)
 another_list_3 = extend_list(6, l)
 print(another_list_3)
 
+if __name__ == "__main__":
+    print("Executing script")
